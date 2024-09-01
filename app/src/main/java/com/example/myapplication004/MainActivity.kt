@@ -134,7 +134,7 @@ fun GreetingCard() {
         Spacer(modifier = Modifier.height(16.dp))
 
         Image(
-            painter = painterResource(id = R.drawable.muscular_bear_at_gym_vector) ,
+            painter = painterResource(id = R.drawable.descarga) ,
             contentDescription = "Course Image" ,
             modifier = Modifier.size(100.dp)
         )
@@ -165,7 +165,9 @@ fun AlertDialogExample(onDismiss: () -> Unit) {
             Button(onClick = { onDismiss() }) {
                 Text("No")
             }
-        }
+        },
+        shape = MaterialTheme.shapes.medium, // Mejora estética con forma
+
     )
 }
 
